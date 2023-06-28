@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import MovieSummary from './components/MovieSummary';
-import TicketBooking from './components/TicketBooking ';
 import MovieList from './components/MovieList';
+import MovieTicketBookingForm from './components/MovieTicketBookingForm';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div>
         <Routes>
           <Route exact path="/movies/:id" element={<MovieSummary />} />
-          <Route exact path="/booking" element={<TicketBooking />} />
+          <Route exact path="/booking" element={<MovieTicketBookingForm />} />
           <Route exact path="/" element={<MovieList />} />
           </Routes>
       </div>
