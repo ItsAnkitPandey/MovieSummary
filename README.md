@@ -1,5 +1,11 @@
 # Getting Started with Create React App
+<<<<<<< HEAD
 # Live On [MovieSummary](https://moviesummary.netlify.app)
+=======
+
+# Live on [MovieSummary](https://moviesummary.netlify.app)
+
+>>>>>>> a007de8c5916db90b9852689c38e3ddbb124f7e1
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
