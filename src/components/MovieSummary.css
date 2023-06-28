@@ -77,6 +77,7 @@
     padding: 10px;
 
 }
+
 .btn-btn{
     margin: 10px;
     padding: 10px;
@@ -90,4 +91,9 @@
     font-family: 'Audiowide', sans-serif;
     cursor: pointer;
     margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-btn:hover{
+    background-color: darkgreen;
 }

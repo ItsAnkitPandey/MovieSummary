@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import './MovieSummary.css'
 import loading from './Loading.gif'
 
-const MovieSummary = () => {
+const MovieSummary = ({history}) => {
     const { id } = useParams(); // Access the id from the URL
     const [movie, setMovie] = useState();
-
+    
     useEffect(() => {
         // Fetch movie summary from API
         fetch(`https://api.tvmaze.com/shows/${id}`)
@@ -18,8 +18,8 @@ const MovieSummary = () => {
     const handleBookTicket = () => {
         // Save movie details to local storage
         localStorage.setItem('movie', JSON.stringify(movie));
-        // Navigate to the ticket booking page
-        window.location.href = '/booking';
+        
+       
     };
 
     if (!movie) {
@@ -47,7 +47,7 @@ const MovieSummary = () => {
                 <p className="full-summary">{movie.summary}</p>
             </div>
             <div className="btn">
-                <button className='btn-btn' onClick={handleBookTicket}>Book Ticket</button>
+                <Link to = '/booking' className='btn-btn' onClick={handleBookTicket}>Book Ticket</Link>
             </div>
         </div>
     );
