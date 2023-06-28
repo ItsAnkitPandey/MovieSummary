@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:wght@200&display=swap');
+
+
+.spinner{
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.banner-img img{
+    width: 300px;
+    height: 300px;
+    
+
+}
+.banner-img{
+    padding: 10px;
+    margin-top: 5vh;
+    
+   
+}
+.movie-name{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: 2rem;
+
+    
+}
+.summary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3vh;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.full-summary {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(5, 3, 16); 
+    letter-spacing: 1px;
+}
+
+.full-summary:hover{
+    color: darkcyan;
+    transition: 1s ease-in-out;
+}
+.summary-heading {
+    font-size: 50px;
+    font-family: 'Audiowide', sans-serif;
+    text-decoration: none;
+    color: rgb(199, 54, 29);
+    margin: 0 !important;
+    
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+.btn-btn{
+    margin: 10px;
+    padding: 10px;
+    width: 20rem;
+    background-color: rgb(40, 40, 245);
+    color: white;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-radius: 10px;
+    font-family: 'Audiowide', sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
