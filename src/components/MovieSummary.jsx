@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import './MovieSummary.css'
 import loading from './Loading.gif'
+import noimg from "../noimg.jpg"
 
 const MovieSummary = ({history}) => {
     const { id } = useParams(); // Access the id from the URL
@@ -34,9 +35,9 @@ const MovieSummary = ({history}) => {
 
             <div className="details">
                 <div className="banner-img">
-                    {movie.image && movie.image.original && (
+                    {(movie.image && movie.image.original) ? (
                         <img src={movie.image.original} alt={movie.name} />
-                    )}
+                    ) :(<img src={noimg} alt={movie.name} />) }
                 </div>
                 <div className="movie-name">
                     <h1>{movie.name}</h1>
